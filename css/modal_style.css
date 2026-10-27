@@ -1,0 +1,108 @@
+/* 
+	font-family: Rubik-Medium;
+	font-family: Rubik-reg;
+*/
+
+.modal__backgraund {
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+	align-items: center;
+	background-color: darkolivegreen;
+}
+
+.modal__container {
+	background-color: #ffffff;
+	width: 304px;
+	height: 394px;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+}
+
+.modal__login-p {
+	text-align: center;
+	font-family: Rubik-Medium;
+	font-size: 28px;
+	color: #333333;
+	margin-top: 36px;
+}
+
+.modal__login-input {
+	border: none;
+	border-bottom: 1px #333333 solid;
+	border-color: #333333;
+	margin-left: 36px;
+	margin-top: 24px;
+}
+
+.modal__login-input:focus {
+	outline: none;
+}
+
+.modal__login-input::placeholder {
+		color: #828282;
+		font-size: 16px;
+		font-family: Rubik-reg;
+}
+
+
+
+.modal__login-checkbox {
+	padding-top: 23px;
+	margin-left: 36px;
+	font-family: Rubik-reg;
+	font-size: 16px;
+	display: flex;
+	gap: 8px;
+}
+
+#check1 {
+	position: absolute;
+	/* top: 180px; */
+	transform: scale(1.5);
+	opacity: 0;
+	cursor: pointer;
+}
+
+.checkmark {
+	height: 16px;
+	width: 16px;
+	background-color: #ffffff;
+	color: #ffffff;
+	border: #333333 solid 1px;
+	border-radius: 4px;
+	cursor: default;
+	z-index: -1;
+	text-align: center;
+}
+
+.modal__login-checkbox .checkmark p {
+	margin-top: -2px;
+	font-size: 13px;
+}
+
+#check1:checked ~ .checkmark {
+	background-color: #ffffff;
+	border: #333333 solid 1px;
+	color: #e5261e;
+	border-radius: 4px;
+}
+
+
+.modal__login-button {
+	font-family: Rubik-Medium;
+	width: 113px;
+	height: 38px;
+	font-size: 16px;
+	margin-top: 111px;
+	margin-left: 96px;
+	border: none;
+	border-radius: 4px;
+	background-color: #e5261e;
+	color: #ffffff;
+}
+
+.modal__login-button:hover {
+	background-color: #cc221b;
+}
